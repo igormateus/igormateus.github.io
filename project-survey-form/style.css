@@ -1,0 +1,30 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+    background-color: #3D7BE1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    text-align: center;
+    color: white;
+    text-shadow:#000 -1px -1px;
+}
+
+#description {
+    margin-top: 10px;
+    
+}
+
+label {
+    color: white;
+    text-shadow:#000 -1px -1px;
+}
