@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Título</h1>
+    <p id="description">Breve descrição</p>
+    <form action="" method="post" id="survey-form">
+        <label for="name" id="name-label">Nome</label>
+        <input type="text" name="name" id="name" placeholder="Insira o nome" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Insira o email" required>
+
+        <label for="age" id="number-label">Idade</label>
+        <input type="number" name="age" id="number" min="10" max="99" placeholder="Insira sua idade" required>
+
+        <select name="gender" id="dropdown">
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+        </select>
+
+        <input type="radio" name="radio" id="" value="radio1" checked>Radio 1
+        <input type="radio" name="radio" id="" value="radio1">Radio 2
+        <input type="radio" name="radio" id="" value="radio1">Radio 3
+
+        <input type="checkbox" name="check" id="" value="check1">Check 1
+        <input type="checkbox" name="check" id="" value="check2">Check 2
+        <input type="checkbox" name="check" id="" value="check3">Check 3
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="submit" id="submit">
+    </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
