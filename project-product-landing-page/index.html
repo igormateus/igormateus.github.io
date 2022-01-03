@@ -1,54 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build a Product Landing Page</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <meta name="description" content="Responsive Web Design Projects">
+    <title>TV tilt - Project Product Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
     <header id="header">
-        Header
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Monitor_ultrawide_21_9.jpg" alt="" id="header-img">
+        <img id="header-img" src="./logo.png" alt="Company Logo" />
+
         <nav id="nav-bar">
-            Nav-bar that should aways be on top of the viewport
-            <ul>
-                <li>
-                    <a href="#contact" class="nav-link">Deixe seu contato</a>
-                </li>
-                <li>
-                    <a href="#viewvideo" class="nav-link">Ver vídeo</a>
-                </li>
-                <li>
-                    <a href="#info" class="nav-link">Informações</a>
-                </li>
-            </ul>
+            <a class="nav-link" href="#product-info">Features</a>
+            <a class="nav-link" href="#video-section">How It Works</a>
+            <a class="nav-link" href="#contact">Contact</a>
         </nav>
     </header>
 
-    
+    <main class="content">
+        <section id="product-info">
+            <h1 class="product-info-title">Features - TV 8K smart</h1>
+            <p class="product-info-p">Utilize <strong>TV (ATSC 3.0) technology</strong> to access high-quality, free 4K TV content with built-in tuners in your Samsung TV.</p>
+            <p class="product-info-p">Ultra-fine contrast with <strong>Quantum Mini LED</strong> that reveals every hidden detail</p>
+            <p class="product-info-p">Powerful AI upscaling powered by <strong>Quantum Processor 8K</strong> ensures you always get full 8K resolution on your 75-inch TV.</p>
+            <p class="product-info-p"><strong>Infinity One Design</strong> creates a beautifully designed, premium viewing experience.</p>
+        </section>
 
-    <section id="contact">
-        <form method="GET" action="https://www.freecodecamp.com/email-submit" id="form">
-            Form
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Seu email" required>
-            <input type="submit" value="Enviar" id="submit">
-        </form>
-    </section>
+        <section id="video-section">
+            <h1 class="video-section-title">How It Works</h1>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Vk7fRQ1x5uU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
 
-    <section id="viewvideo">
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Vk7fRQ1x5uU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+        <section id="contact">
+            <h2 class="contact-title">Your Contact</h2>
+            <div class="contact-content">
+                <form id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="your@email.com" required>
+                    <input id="submit" type="submit" value="Send!">
+                </form>
+                <img class="contact-right" src="./tvimg.png" alt="Tv Image">
+            </div>
+        </section>
+    </main>
 
-    <section id="info">
-        Usar o flexbox
-        Ter um MediaQuery
-    </section>
-    
+    <footer class="footer">
+        <img class="footer-img" src="./logo.png" alt="Company Logo" />
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
