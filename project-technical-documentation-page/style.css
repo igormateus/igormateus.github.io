@@ -1,0 +1,120 @@
+html, body {
+    min-width: 300px;
+    color: slategrey;
+    background-color: azure;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    color: black;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 300px;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: solid rgb(0, 22, 22, 0.4);
+}
+
+#navbar header {
+    margin: 10px;
+    text-align: center;
+}
+
+#navbar ul {
+    height: 90%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    color: antiquewhite;
+    border-top: 1px solid rgb(0, 22, 22, 0.4);
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: slategray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar a:hover {
+    color: black;
+    background-color: coral;
+    font-weight: bold;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 300px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+section article {
+    margin: 15px;
+    font-size: 14px;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+code {
+    display: block;
+    position: relative;
+    text-align: left;
+    white-space: pre-line;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: lightslategrey;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+    #navbar ul {
+      border: 1px solid;
+      height: 200px;
+    }
+  
+    #navbar {
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 300px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }

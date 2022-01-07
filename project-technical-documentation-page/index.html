@@ -1,97 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Documentation Page</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Git Tips</title>
 
     <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
-   
-
-    <div id="main-doc">
-        
+    <nav id="navbar">
         <header>
-            text that describes the topic of that section.
-            <nav id="navbar">
-                <a href="#id1" target="_blank" rel="noopener noreferrer">ID 1</a>
-                <a href="#id2" target="_blank" rel="noopener noreferrer">ID 2</a>
-                <a href="#id3" target="_blank" rel="noopener noreferrer">ID 3</a>
-                <a href="#id4" target="_blank" rel="noopener noreferrer">ID 4</a>
-                <a href="#id5" target="_blank" rel="noopener noreferrer">ID 5</a>
-            </nav>
-
-            The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
+            <h1>Git Tips</h1>
         </header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Install">Install</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Configure">Configure</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Create_Repositories">Create Repositories</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Make_Changes">Make Changes</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Handling_Branches">Handling Branches</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Refact_Files">Refact Files</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Delete_Traking">Delete Traking</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Save_Fragments">Save Fragments</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#History_Review">History Review</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Undo_Commits">Undo Commits</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Synchronize_Changes">Synchronize Changes</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Reference">Reference</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <article>
+                <p>Git is a free and open source distributed version control system designed to handle everything 
+                    from small to very large projects with speed and efficiency.</p>
 
-        <section class="main-section" id="id_1">
-
-            <p>User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
-
-            <p>User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
-
-            <p>User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.
-
-            <p>User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
-
-            <p>User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
-
-            <p>User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
-
-            <p>User Story #7: The .main-section elements should contain at least 5 li items total (not each).
-
-            <p>User Story #8: I can see a nav element with a corresponding id="navbar".
-
-            <p>User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
-
-            <p>User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
-
-            <p>User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.
-
-            <p>User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
-
-            <p>User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
-
-            <p>User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
-
-            <p>User Story #15: My Technical Documentation page should use at least one media query.
-
+                <p>Git is easy to learn and has a tiny footprint with lightning fast performance.
+                    It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like
+                    cheap local branching, convenient staging areas, and multiple workflows.</p>
+            </article>
         </section>
-        <section class="main-section" id="id_2">
-            <p></p>
-            <p></p>
-            <code></code>
-            <code></code>
-            <code></code>
-            <code></code>
-            <code></code>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <section class="main-section" id="Install">
+            <header>
+                <h2>Install</h2>
+            </header>
+            <article>
+                <p>GitHub provides desktop clients that include a graphical interface
+                    for the most common actions in a repository and automatically updates 
+                    to the Git command line for advanced scenarios:</p>
+                <ul>
+                    <li>
+                        <a href="https://windows.github.com" target="_blank">GitHub for Windows</a>
+                    </li>
+                    <li>
+                        <a href="https://mac.github.com" target="_blank">GitHub for Mac</a>
+                    </li>
+                    <li>
+                        <span>Git distributions for Linux and POSIX systems are available on the official Git SCM website.</span> <a href="http://git-scm.com" target="_blank">Git for all platforms</a>
+                    </li>
+                </ul>
+            </article>
         </section>
-        <section class="main-section" id="id_3">
-            <p></p>
-            <p></p>
+        <section class="main-section" id="Configure">
+            <header>
+                <h2>Configure</h2>
+            </header>
+            <article>
+                <p>Configure user's information for all local repositories</p>
+                <div class="main-doc-section-article-item">
+                    <code>$ git config --global user.name "[name]"</code>
+                    <p>Set the name you want your commit transactions linked to</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git config --global user.email "[email]"</code>
+                    <p>Set the email you want your commit transactions linked to</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git config --global color.ui auto</code>
+                    <p>This variable determines the default value for variables 
+                        such as color.diff and color.grep that control the use of 
+                        color per command family. Its scope will expand as more 
+                        commands learn configuration to set a default for the --color 
+                        option.</p>
+                </div>
+            </article>
         </section>
-        <section class="main-section" id="id_4">
-            <p></p>
-            <p></p>
+        <section class="main-section" id="Create_Repositories">
+            <header>
+                <h2>Create Repositories</h2>
+            </header>
+            <article>
+                <p>Start a new repository or get an existing URL</p>
+                <div class="main-doc-section-article-item">
+                    <code>$ git init [project-name]</code>
+                    <p>Create a new local repository with a specific name</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git clone [url]</code>
+                    <p>Download a project and its version history complete</p>
+                </div>
+            </article>
         </section>
-        <section class="main-section" id="id_5">
-            <p></p>
-            <p></p>
+        <section class="main-section" id="Make_Changes">
+            <header>
+                <h2>Make Changes</h2>
+            </header>
+            <article>
+                <p>Review editions and create a commit transaction</p>
+                <div class="main-doc-section-article-item">
+                    <code>$ git status</code>
+                    <p>List all new files or changed files to be commited</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git diff</code>
+                    <p>Shows difference between files to be commit</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git add [file]</code>
+                    <p>Puts file on stage mode</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git diff --staged</code>
+                    <p>Shows the difference between selected files and its latest versions</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git reset [archive]</code>
+                    <p>Deselects the file but preserves its content</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git commit -m "[description message]"</code>
+                    <p>Permanently writes the snapshot files to version history</p>
+                </div>
+            </article>
         </section>
-    
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    </div>
+        <section class="main-section" id="Handling_Branches">
+            <header>
+                <h2>Handling Branches</h2>
+            </header>
+            <article>
+                <p>Name a series of commits and combine the full efforts</p>
+                <div class="main-doc-section-article-item">
+                    <code>$ git branch</code>
+                    <p>List all branches in local repository</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git branch [branch-name]</code>
+                    <p>Create a new branch</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$  git checkout [branch-name]</code>
+                    <p>Go to a specific branch and update files</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git merge [branch]</code>
+                    <p>Combines the history of the specific branch with the current branch</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>git branch -d [branch-name]</code>
+                    <p>Delete a branch</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Refact_Files">
+            <header>
+                <h2>Refact Files</h2>
+            </header>
+            <article>
+                <p>Change and remove files</p>
+                <div class="main-doc-section-article-item">
+                    <code>$ git rm [file]</code>
+                    <p>Remove the file from the working directory and select it for removal</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git rm --cached [file]</code>
+                    <p>Removes the file from version control but preserves the file locally</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git mv [original-file] [renamed-file]</code>
+                    <p>Rename the file and select it for commit</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Delete_Traking">
+            <header>
+                <h2>Delete Traking</h2>
+            </header>
+            <article>
+                <p>Delete temporary files and directories</p>
+                <div class="main-doc-section-article-item">
+                    <code>*.log
+                        build/
+                        temp-*</code>
+                    <p>A text file called '.gitignore' suppresses versioning accidental files and directories 
+                        matching patterns specified</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git ls-files --other --ignored --exclude-standard</code>
+                    <p>List all ignored files in this project</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Save_Fragments">
+            <header>
+                <h2>Save Fragments</h2>
+            </header>
+            <article>
+                <p>Archive and restore incomplete changes</p>
+                <div class="main-doc-section-article-item">
+                    <code>$ git stash</code>
+                    <p>Temporarily stores all modified tracked files</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git stash pop</code>
+                    <p>Restore recent stash files</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git stash list</code>
+                    <p>Lists all stash change sets</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git stash drop</code>
+                    <p>Discards the latest change sets in stash</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="History_Review">
+            <header>
+                <h2>History Review</h2>
+            </header>
+            <article>
+                <p>Browse and inspect the evolution of project files</p>
+                <div class="main-doc-section-article-item">
+                    <code>$ git log</code>
+                    <p>Lists the version history for the current branch</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git log --follow [file]</code>
+                    <p>Lists the version history for a file, including name changes</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git diff [first-branch]...[second-branch]</code>
+                    <p>Shows the difference in content between two branches</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git show [commit]</code>
+                    <p>Returns metadata and content changes for the specified commit</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Undo_Commits">
+            <header>
+                <h2>Undo Commits</h2>
+            </header>
+            <article>
+                <p>Erase mistakes and create a replacement history</p>
+                <div class="main-doc-section-article-item">
+                    <code>$ git reset [commit]</code>
+                    <p>Undo all commits after '[commit]', preserving local changes</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git reset --hard [commit]</code>
+                    <p>Discards all history and changes for the specified commit</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Synchronize_Changes">
+            <header>
+                <h2>Synchronize Changes</h2>
+            </header>
+            <article>
+                <p>Register a repository marker and change version history</p>
+                <div class="main-doc-section-article-item">
+                    <code>$ git fetch [marker]</code>
+                    <p>Download the entire history of a repository marker</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git merge [marker]/[branch]</code>
+                    <p>Match the branch marker to the local branch</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git push [alias] [branch]</code>
+                    <p>Send all commits from the local branch to GitHub</p>
+                </div>
+                <div class="main-doc-section-article-item">
+                    <code>$ git pull</code>
+                    <p>Download history and incorporate changes</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>
+                <h2>Reference</h2>
+            </header>
+            <article>
+                <ul>
+                    <li>
+                        Git --distributed-even-if-your-workflow-isnt
+                        <a href="https://git-scm.com/" target="_blank">GIT</a>
+                    </li>
+                    <li>
+                        GITHUB FOLHA DE DICAS DE GIT
+                        <a href="https://training.github.com/downloads/pt_BR/github-git-cheat-sheet.pdf" target="_blank">training.github.com</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
