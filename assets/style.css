@@ -10,6 +10,7 @@
     --font-confortaa: 'Comfortaa', cursive;
     --font-raleway: 'Raleway', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
+    --font-playfair: 'Playfair Display', serif;
   }
 
 /* Base reset */
@@ -78,6 +79,8 @@ header {
 
 .welcome-section-content {
     max-width: 500px;
+    margin-left: 15px;
+    margin-top: 56px;
 
     display: flex;
     flex-direction: column;
@@ -148,4 +151,94 @@ header {
 
 .button-secundary {
     background: var(--color-background);
+}
+
+/* Section Projects */
+#projects {
+    width: 992px;
+    margin-top: 144px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects h1, footer h1 {
+    font-family: var(--font-playfair);
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+
+    color: var(--color-header);
+}
+
+.rectangle {
+    width: 100px;
+    height: 4px;
+    background: var(--color-primary);
+    border-radius: 2px;
+    margin-top: 4px;
+    margin-bottom: 40px;
+}
+
+.project {
+    margin: 40px 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    filter: drop-shadow(0px 6px 64px rgba(112, 144, 176, 0.1));
+    border-radius: 24px;
+    overflow: hidden;
+
+    background: #FFFFFF;
+}
+
+.project-info {
+    margin: 0 50px;
+}
+
+.project-title {
+    font-family: var(--font-playfair);
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+
+    color: var(--color-header);
+}
+
+.project-info p {
+    font-family: var(--font-nunito);
+    font-size: 18px;
+    line-height: 27px;
+
+    color: var(--color-paragraph);
+
+    margin: 24px 0;
+}
+
+.project-info a {
+    width: 150px;
+    height: 43px;
+
+    border: 1px solid var(--color-header);
+    box-sizing: border-box;
+    border-radius: 24px;
+
+    padding: 8px 24px;
+
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: var(--color-header);
+}
+
+.project-info a:hover {
+    cursor: pointer;
+    background-color: var(--color-primary);
 }
