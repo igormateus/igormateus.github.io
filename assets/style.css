@@ -1,0 +1,151 @@
+/* Custom properties/variables  */
+:root {
+    --color-background: #F9FAFF;
+    --color-primary: #FDC435;;
+    --color-paragraph: #828282;
+    --color-h1: #333333;
+    --color-header: #25282B;
+
+    --font-nunito: 'Nunito', sans-serif;
+    --font-confortaa: 'Comfortaa', cursive;
+    --font-raleway: 'Raleway', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+  }
+
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html, body {
+    max-width: 1440px;
+    background-color: var(--color-background);
+    color: var(--color-header);
+    font-family: var(--font-nunito);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Header and nav */
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 32px;
+    max-width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 120px;
+}
+
+#profile-link {
+    font-family: var(--font-confortaa);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--color-header);
+}
+
+.nav a {
+    margin: 0 24px;
+    font-family: var(--font-raleway);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-header);
+}
+
+.nav a:hover {
+    border-bottom: 2px solid var(--color-header);
+}
+
+/* Welcome Section */
+#welcome-section {
+    max-width: 1440px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#welcome-section img {
+    max-width: 50%;
+}
+
+.welcome-section-content {
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.welcome-section-content span {
+    font-family: var(--font-nunito);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+
+    color: var(--color-primary);
+
+    margin-bottom: 12px;
+}
+
+.welcome-section-content h1 {
+    font-family: var(--font-roboto);
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: var(--color-h1);
+}
+
+.welcome-section-content-subheadline {
+    margin: 32px 0;
+}
+
+.welcome-section-content-subheadline p {
+    font-family: var(--font-nunito);
+    font-size: 24px;
+    line-height: 36px;
+
+    color: var(--color-paragraph);
+}
+
+.button {
+    padding: 8px 24px;
+    border-radius: 8px;
+    margin-right: 12px;
+
+    border: 2px solid var(--color-header);
+    box-sizing: border-box;
+
+    font-family: var(--font-roboto);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: var(--color-header);
+}
+
+.button:hover {
+    transition: 0.5s;
+    opacity: 0.7; 
+    
+    cursor: pointer;
+}
+
+.button-primary {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.button-secundary {
+    background: var(--color-background);
+}
