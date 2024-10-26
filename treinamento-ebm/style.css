@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff7ee;
+    margin: 0; 
+    padding: 0;
+    overflow-x: hidden;
+    display: flex; 
+    flex-direction: column; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal;
+    font-family: 'Cormorant Garamond', serif;
+    font-kerning: none;
+    text-decoration: none;
+    letter-spacing: 0em;
+    text-transform: none;
+    font-style: normal;
+    color: #fff;
+    list-style-type: none;
+}
+
+header {
+    width: 100%; 
+    background-image: url('img/fundo_header.jpg');
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.author {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.course_title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.course_title_start {
+    font-weight: 700;
+    font-size: 140px;
+    margin-bottom: -60px;
+}
+
+.course_title_end {
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 130px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.button {
+    padding: 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px auto 50px auto;
+    text-align: center;
+    max-width: 200px;
+}
+
+.button a {
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.highlight {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.highlight_border {
+    border: 1px solid #303030;
+    padding: 40px;
+}
+
+.highlight_container {
+    max-width: 1000px;
+    background-image: url(img/fundo_joias.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.highlight_title {
+    width: 500px;
+    padding: 50px 20px;
+}
+
+.highlight_title p {
+    font-weight: 400;
+    font-size: 90px;
+    text-align: center;
+}
+
+.highlight_title span {
+    font-weight: 700;
+}
+
+.highlight_content {
+    width: 370px;
+    padding: 50px 20px;    
+}
+
+.highlight_content p {
+    font-weight: 400;
+    font-size: 45px;
+    text-align: center;
+}
+
+/* <section
+        style="">
+        <div class="container"
+            style="
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;">
+            <p
+                style="font-weight: 500;
+                font-size: 75px;
+                margin: 0;
+                max-width: 600px;
+                text-align: center;">
+                Domine a arte de <span
+                    style="font-weight: 700;">valorizar</span> sua imagem</p>
+            <p
+                style="font-size: 40px;
+                font-weight: 300;
+                margin: 0;
+                padding: 20px;
+                max-width: 600px;
+                text-align: center;">
+                Descubra as principais técnicas para mostrar sua melhor versão, elevar sua confiança e se destacar com uma presença marcante que abre portas!</p>
+        </div>
+    </section> */
