@@ -80,7 +80,8 @@ header {
 }
 
 .button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
 }
 
 .highlight {
@@ -132,29 +133,67 @@ header {
     text-align: center;
 }
 
-/* <section
-        style="">
-        <div class="container"
-            style="
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            max-width: 500px;">
-            <p
-                style="font-weight: 500;
-                font-size: 75px;
-                margin: 0;
-                max-width: 600px;
-                text-align: center;">
-                Domine a arte de <span
-                    style="font-weight: 700;">valorizar</span> sua imagem</p>
-            <p
-                style="font-size: 40px;
-                font-weight: 300;
-                margin: 0;
-                padding: 20px;
-                max-width: 600px;
-                text-align: center;">
-                Descubra as principais técnicas para mostrar sua melhor versão, elevar sua confiança e se destacar com uma presença marcante que abre portas!</p>
-        </div>
-    </section> */
+.liberty {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+    background-image: url(img/video.png);
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+}
+
+.liberty_title {
+    max-width: 600px;
+}
+
+.liberty_title h1 {
+    font-weight: 400;
+    font-size: 90px;
+    text-align: center;
+}
+
+.liberty_title span {
+    font-weight: 700;
+}
+
+.liberty_container {
+    max-width: 450px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.liberty_container p {
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+
+.course_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.course_content_title {
+    margin: 50px auto;
+    font-weight: 300;
+    font-size: 70px;
+    text-align: center;
+    color: #000;
+}
+
+.course_content_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.course_content_items img {
+    border-radius: 20px;
+    width: 450px;
+}
