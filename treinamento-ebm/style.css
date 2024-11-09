@@ -177,10 +177,13 @@ header {
 
 .course_content_title {
     margin: 50px auto;
-    font-size: 70px;
-    font-weight: lighter;
-    text-align: center;
     color: #000;
+}
+
+.course_content_title h1 {
+    font-size: 90px;
+    font-weight: 400;
+    text-align: center;
 }
 
 .course_content_items {
@@ -228,4 +231,81 @@ header {
 
 .bonus_content img{
     width: 350px;
+    border-radius: 10px;
+}
+
+#checkout {
+    display: flex;
+    background-image: url("img/fundo_tecido.png");
+    background-size: cover;
+    background-position: top;
+    justify-content: center;
+}
+
+.checkout_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    color: #303f3c;
+    text-align: center;
+}
+
+.ckeckout_head h1 {
+    font-size: 90px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.ckeckout_head p {
+    font-size: 45px;
+}
+
+.line {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #303030;
+}
+
+.checkout_prepare_price {
+    font-size: 42px;
+}
+
+.checkout_prepare_price del {
+    text-decoration-color: red
+}
+
+.checkout_prepare_price span {
+    background-color: #80d39b;
+    font-size: 138px;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.checkout_prepare_price div {
+    margin: 20px 10px;
+}
+
+.checkout_container .button {
+    margin: 20px auto;
+}
+
+.checkout_container .button a {
+    color: #fff;
+}
+
+.button:hover {
+    a {
+        color: #303f3c;
+    }
+}
+
+.ckeckout_span {
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+.ckeckout_span p {
+    font-size: 19px;
+    color: gray;
 }
