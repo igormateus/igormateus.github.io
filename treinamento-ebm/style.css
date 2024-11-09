@@ -238,7 +238,7 @@ header {
     display: flex;
     background-image: url("img/fundo_tecido.png");
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     justify-content: center;
 }
 
