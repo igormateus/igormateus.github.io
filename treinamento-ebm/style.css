@@ -20,6 +20,7 @@ body {
     font-style: normal;
     color: #fff;
     list-style-type: none;
+    min-width: 662px;
 }
 
 header {
@@ -308,4 +309,74 @@ header {
 .ckeckout_span p {
     font-size: 19px;
     color: gray;
+}
+
+.guarantee {
+    display: flex;
+    justify-content: center;
+}
+
+.guarantee_container {
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #303f3c;
+    margin: 50px auto;
+}
+
+.guarantee_container h1 {
+    font-size: 90px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.guarantee_container img {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.guarantee_container p {
+    font-size: 38px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/fundo_cabelos.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+footer span {
+    text-align: center;
+    padding: 20px;
+    border-bottom: solid 1px #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer_container {
+    margin: 50px auto;
+    max-width: 1300px;
+}
+
+.footer_container h1 {
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer_container p {
+    font-size: 38px;
+    text-align: center;
+    margin: 20px auto 50px auto;
+    max-width: 900px;
 }
