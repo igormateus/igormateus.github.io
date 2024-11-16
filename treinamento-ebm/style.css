@@ -1,9 +1,15 @@
-* {
+*, 
+*:after,
+*:before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-body {
+body{
+    font-size: 100%;
+    list-style-type: none;
     background-color: #fff7ee;
     margin: 0; 
     padding: 0;
@@ -23,66 +29,70 @@ body {
     min-width: 662px;
 }
 
+.container {
+    max-width: 1280px;
+}
+
 header {
-    width: 100%; 
-    background-image: url('img/fundo_header.jpg');
-    background-position: center center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    background-image: url('img/fundo_header.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .author {
     margin-top: 50px;
-    margin-bottom: 50px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .course_title {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 150px;
+    font-family: 'Playfair Display', serif;
 }
 
 .course_title_start {
-    font-weight: 700;
     font-size: 140px;
-    margin-bottom: -60px;
+    margin-bottom: -100px;
 }
 
 .course_title_end {
-    margin-top: 60px;
-    font-weight: 400;
-    font-size: 130px;
+    margin-top: 100px;
+    font-size: 120px;
     text-align: center;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .button {
-    padding: 20px;
-    border: 1px solid #fff;
-    background-color: transparent;
+    width: 250px;
+    padding: 15px;
+    margin: 40px auto;
+    border: none;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 20px auto 50px auto;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-family: 'Cormorant Garamond', serif;
     text-align: center;
-    max-width: 200px;
-}
-
-.button a {
-    font-weight: 400;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: inherit;
-    font-size: 20px;
 }
 
 .button:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
+    background-color: #E0E0E0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.button a {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #333;
 }
 
 .highlight {
@@ -290,10 +300,6 @@ header {
 
 .checkout_container .button {
     margin: 20px auto;
-}
-
-.checkout_container .button a {
-    color: #fff;
 }
 
 .button:hover {
